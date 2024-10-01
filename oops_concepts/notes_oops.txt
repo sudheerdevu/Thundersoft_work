@@ -1,0 +1,31 @@
+#pillars of OOPS concepts in C++
+------------------------------------------------------------------------
+class- describes the structure 
+object- a specific example of that structure
+instance- another name of the object
+instantiating- creating a object from a class
+data members- variables
+methods- functions
+parent class (or) base class- inherited from..
+child class (or) derived class- does the inheriting
+-------------------------------------------------------------------------
+
+#Abstraction:
+-------------------------------------------------------------------------
+the process of hiding complicated stuff
+ 
+#Encapsulation:
+-------------------------------------------------------------------------
+granting access to private data only through controlled public interfaces
+
+#inheritance:
+-------------------------------------------------------------------------
+can be created derived classes through parent classes
+
+#polymorphism:
+-------------------------------------------------------------------------
+we can create multiple different objects as their base object type.
+
+-------------------------------------------------------------------------
+
+
