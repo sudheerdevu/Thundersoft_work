@@ -1,0 +1,75 @@
+PROBLEMS USING POINTERS:
+
+1.Unintialized POINTERS
+
+
+if we declare a pointers
+int *p;----invalid adress
+
+*p=25;
+
+make it point to something...
+
+int x=10;
+int *p=&x;
+
+ this type of initialization is also allowed 
+ this can be used when we know the exact location of the adress
+
+ a. p=&x;
+ b. p=(int*) int[5];
+ c. p=new int[5]; - heap Memory
+
+if we use cout<<*p;-- here it will give some valueee.
+
+
+2.Memory leak
+
+int *p=new int[5];
+...
+...
+...
+...
+p=NULL;
+
+if we do this then ..
+pointers does'nt point to anything but pointer is there in heap
+then..
+it is memory leak arises
+we should not do this until unless we explicitly delete the memory
+
+int *p=new int[5];
+...
+...
+...
+...
+delete []p;
+p=NULL;
+p=nullptr;
+
+we must delete the pointer compulsory....
+----------------------------------------------------
+
+3.dangling POINTERS
+
+void main(){
+int *p=new int[5];
+..
+
+.
+.
+fun(p);
+cout<<*p;//already deleted it shows error
+}
+
+void fun(int *q){
+
+    .
+    .
+    .
+    delete []q;
+}
+
+in this piece of code here p has some array and q also pointing
+to same array in heap
+in function call it is deleting the array 
