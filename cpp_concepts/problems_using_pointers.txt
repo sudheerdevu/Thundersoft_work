@@ -73,3 +73,6 @@ void fun(int *q){
 in this piece of code here p has some array and q also pointing
 to same array in heap
 in function call it is deleting the array 
+
+here p is called " dangling pointer " because it is pointing to location which is no more exist
+
