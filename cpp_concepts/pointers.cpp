@@ -37,7 +37,7 @@ int main(){
     int size;std::cout<<"enter:"<<std::endl;
     std::cin>>size;int a[size];
     std::cout<<sizeof a<<std::endl;
-    __MAC_10_5 0;
+    return 0;
 
     //20*4 bytes
 

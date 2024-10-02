@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/vaddikasulu/Thundersoft-work-main/Constructors",
-      "program": "/Users/vaddikasulu/Thundersoft-work-main/Constructors/build/Debug/outDebug"
+      "cwd": "/Users/vaddikasulu/Thundersoft-work-main/cpp_concepts",
+      "program": "/Users/vaddikasulu/Thundersoft-work-main/cpp_concepts/build/Debug/outDebug"
     }
   ]
 }
