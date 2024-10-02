@@ -1,2 +1,36 @@
 1. Data Variable
 2. Address Variable
+
+
+#why pointers?
+
+memory management is divided into 3 parts 
+    1.Heap 
+    2.Stack
+    3.Code section
+
+what ever the code present in main function the code is converted into machine code.
+and it is loaded into code section.
+consider this as program at this instance it can only access only code section and stack
+
+Can program directly access heap?
+answer: program directly cannot access heap section
+
+But, if we have pointer i.e.,in stack memory then that pointer have the adress of memory in the heap
+program can access stack -> then it will access the Heap
+
+use of pointers -> to access heap memory
+
+Q2:what is the use of accessing heap memory?
+In C++, accessing heap memory allows for **dynamic memory allocation**—memory that is allocated at runtime rather than compile-time. This provides more flexibility for managing memory, especially when the size of the data is not known beforehand or when you want the data to persist beyond the current scope (e.g., a function's execution). Key benefits of heap memory include:
+
+1. Dynamic Size: You can allocate memory as needed using the `new` operator and deallocate it with `delete`. For example, you can allocate memory for arrays or objects whose size is determined during program execution.
+
+2. Persistence Beyond Scope: Unlike stack memory, heap memory isn't automatically freed when a function returns. The memory persists until it is explicitly freed, which is useful for objects or arrays that need to exist beyond a function’s scope.
+
+3. Large Memory Allocation: The stack has a limited size, and allocating large objects may cause stack overflow. The heap allows for larger allocations as it has much more available space compared to the stack.
+
+4. Data Structures: Many complex data structures like linked lists, trees, and graphs rely on dynamic memory allocation on the heap since their sizes can change as the program runs.
+
+However, it's important to manage heap memory carefully to avoid memory leaks (when memory is allocated but not freed) and dangling pointers (when freed memory is accessed).
+
