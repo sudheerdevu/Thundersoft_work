@@ -16,7 +16,7 @@ void PointerArith()
 
 */
 int main(){
-    int sudheer[5]={2,3,4,5,6};
+    int sudheer[5]= {2,3,4,5,6};
     int *p=sudheer;
     std::cout<<*p<<std::endl;
 
@@ -24,3 +24,4 @@ int main(){
     return 0;
     
 }
+
