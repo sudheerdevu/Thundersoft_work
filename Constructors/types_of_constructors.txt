@@ -1,0 +1,23 @@
+/*
+
+there are generally 4 types of constructors:
+
+1.Default constructors
+2.Non-parameterized constructors
+3.Parameterized constructors
+4.Copy constructors
+
+Default Constructors - automatically calls usually generally not considered 
+
+
+
+
+
+
+
+
+
+
+
+
+*/
