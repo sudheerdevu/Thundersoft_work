@@ -1,0 +1,3 @@
+According to oops principles the data of the class variables must be hidden
+so the data members are made private and functions are made as public 
+these private data members can be accessed through functions....
