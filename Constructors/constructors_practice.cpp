@@ -7,11 +7,15 @@ class Rectangle{
     Rectangle(){                    // default constructor
         length=1;breadth=1;
     }
-    Rectangle(int l,int b){                    // parameterized constructor
+
+    Rectangle(int l,int b){                    // parameterized constructor and also dedault arguments are given
         setLength(l);setBreadth(b);
     }
 
-
+    Rectangle(Rectangle &r){                    //copy constructor
+        length = r.length;
+        breadth= r.breadth;
+    }
 
     void setLength(int l){
         if(l>0)
@@ -37,7 +41,8 @@ class Rectangle{
 
 int main(){
     Rectangle r1(10,5);
-    std::cout<<r1.area()<<std::endl;
+    Rectangle r2(r1);
+    std::cout<<r2.area()<<std::endl;
 
 
 }
