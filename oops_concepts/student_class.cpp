@@ -10,7 +10,7 @@ private:
     int phyMarks;
     int chemMarks;
 public:
-    Student(int r,string n,int m,int p,int c)
+Student(int r,string n,int m,int p,int c)
     {
         roll=r;
         name=n;
