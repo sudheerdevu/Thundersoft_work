@@ -1,0 +1,33 @@
+Topics to be covered:
+
+1. Executable files: formats
+
+2. LAYOUT OF AN PROCESS IN MEMORY 3. Functions: cohesion, function execution, calling
+
+conventions - various language syntaxes Function overloading, function templates, Inline functions, function pointers
+
+4. Pillars of C++ - Polymorphism, data encapsulation, Inheritance, Abstraction
+
+5. Default arguments
+
+6. Library - static link library, dynamic link library
+
+7. Constructors and destructors; Explicit
+
+constructors
+
+8. Reference types
+
+9. Operator overloading
+
+10. Dynamic memory allocations
+
+11. Inheritance
+
+12. Casting Operators - reinterpret_cast, static_cast, dynamic_cast, const_cast
+
+13. Custom namespaces
+
+14. Exception handling
+
+15. STL - Container classes, Iterator classes, Algorithms
