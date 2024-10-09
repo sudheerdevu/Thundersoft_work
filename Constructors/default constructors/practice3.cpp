@@ -14,7 +14,9 @@ Array(){
 }
 
 private:
-int *data;int size;
+
+int *data;
+int size;
 
 };
 
