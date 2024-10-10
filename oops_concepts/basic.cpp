@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 /*
 
@@ -35,3 +36,9 @@ int main() {
     d.setValues(10, 20);  // Set values for x and y
     d.display();          // Access the display function
 }
+
+*/
+
+
+*/ 
+
