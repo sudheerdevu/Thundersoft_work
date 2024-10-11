@@ -1,14 +1,17 @@
 {
   "version": "0.2.0",
   "configurations": [
-    
     {
-      "name": "C/C++ Runner: Debug Session",
+      "name": "C/C++: clang++ build and debug active file",
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/vaddikasulu/Thundersoft-work-main/cpp_concepts",
-      "program": "/Users/vaddikasulu/Thundersoft-work-main/cpp_concepts/build/Debug/outDebug"
+      "cwd": "${fileDirname}",  // Set current working directory to the active file's directory
+      "program": "${fileDirname}/${fileBasenameNoExtension}",  // Output path of the built executable
+      "stopAtEntry": false,
+      "env": {},
+      "preLaunchTask": "C/C++: clang++ build active file",  // Reference the build task
+      "externalConsole": false  // Set to true to open an external console if needed
     }
   ]
 }
