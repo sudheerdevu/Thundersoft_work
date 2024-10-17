@@ -1,0 +1,15 @@
+TOPICS TO BE COVERED BY KALYANI MAM:
+
+Beginning with C++,  Data abstraction=call by ref & value / new - delete /inline fns / scope resolution / default args 
+
+Classes and Objects = access specifiers/defining mem fns / nesting member fns / private mem fns / allocating mem for objs / static data members / static member fns / array of obj / objects as fn arguments 
+
+Constructor -Destructor= different constructors / destructors / public + private / Singleton class understanding
+
+inheritance= Check programming Diamond problem and inheritance programs 
+
+Polymorphism = runtime -compile time Polymorphism, fn and operator overloading/ Virtual fns 
+
+Pointers to obj = abstract class , typecasting in C++ , this pointer
+
+Templates and Exception Handling	
