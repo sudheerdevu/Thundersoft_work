@@ -1,0 +1,15 @@
+Inheritance:
+upon an object we can access the protected and private members but only public.
+upon derived class- extends base class
+it can access public, protected but not private
+its available but cannot accessable
+---------
+why??
+            private     protected       public
+
+inside class    y          y               y
+
+inside derived class
+                n           y                y
+on Object 
+                n            y                y

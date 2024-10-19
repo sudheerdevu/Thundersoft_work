@@ -1,5 +1,5 @@
 TOPICS TO BE COVERED BY KALYANI MAM:
-
+--------------------------------------------
 Beginning with C++,  Data abstraction=call by ref & value / new - delete /inline fns / scope resolution / default args 
 
 Classes and Objects = access specifiers/defining mem fns / nesting member fns / private mem fns / allocating mem for objs / static data members / static member fns / array of obj / objects as fn arguments 
