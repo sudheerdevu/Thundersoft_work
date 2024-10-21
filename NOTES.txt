@@ -13,3 +13,24 @@ inside derived class
                 n           y                y
 on Object 
                 n            y                y
+
+
+So you can see that this type of minor details are available in C++.
+
+You can restrict the access down the hierarchy of classes, right?
+
+This is not available in other languages.
+
+It's there in C++ like it's not there in Java.
+
+You cannot inherit publicly.
+
+Privately, there's only one type of inheritance in Java.
+
+So that's it.
+
+
+when the derived class accessing variables as publicly
+then all members are accessible except private
+ 
+further child class - only private cant access
