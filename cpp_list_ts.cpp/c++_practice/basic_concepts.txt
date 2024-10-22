@@ -1,4 +1,4 @@
-TOPICS TO BE COVERED BY KALYANI MAM:
+TOPICS TO BE COVERED BY KALYANI MAM THUNDERSOFT:
 --------------------------------------------
 Beginning with C++,  Data abstraction=call by ref & value / new - delete /inline fns / scope resolution / default args 
 
