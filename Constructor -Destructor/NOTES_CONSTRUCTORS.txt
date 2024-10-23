@@ -1,0 +1,4 @@
+	•	Constructors are used for initializing objects.
+	•	Destructors are used for cleanup before an object is destroyed.
+	•	Public and private members help in encapsulation.
+	•	Singleton classes ensure only one instance of a class exists throughout the application.
