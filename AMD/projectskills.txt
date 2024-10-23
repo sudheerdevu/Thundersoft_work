@@ -1,0 +1,66 @@
+Before diving into the one-month roadmap for mastering TensorFlow Lite, OpenCL, and Ubuntu development, it’s crucial to have some foundational knowledge and skills. Here are the prerequisites you should be familiar with to ensure a smooth learning experience:
+
+1. Programming Fundamentals
+
+	•	Languages:
+	•	Python: Since TensorFlow is primarily used with Python, you should be comfortable with Python syntax, object-oriented programming, and libraries like NumPy.
+	•	C++ Basics: TensorFlow Lite’s core is written in C++, and while extensive knowledge isn’t required, understanding basic C++ syntax and memory management will help if you need to dig deeper into performance optimizations.
+	•	Concepts:
+	•	Data structures (lists, arrays, dictionaries, etc.).
+	•	Loops, functions, and classes.
+	•	Exception handling and debugging techniques.
+
+2. Machine Learning Basics
+
+	•	Key Concepts: Understanding of essential machine learning terms and workflows like:
+	•	Neural networks (basic architectures such as CNNs and RNNs).
+	•	Model training and inference.
+	•	Loss functions, optimizers, and activation functions.
+	•	Experience using TensorFlow to build and train models.
+
+3. TensorFlow Knowledge
+
+	•	TensorFlow Basics: Familiarity with TensorFlow’s core API is important:
+	•	Model creation (Sequential API, Functional API, etc.).
+	•	Training and evaluating models.
+	•	Saving and loading models.
+	•	TensorFlow Lite: If possible, having a preliminary understanding of what TensorFlow Lite is and why it’s used for deploying models on mobile/edge devices will help. This will be your deep dive focus in Week 1.
+
+4. Parallel Processing Concepts
+
+	•	Basic Parallel Computing: A general idea of how parallel computing works will be useful for OpenCL. You don’t need to be an expert, but understanding:
+	•	Threads, parallel tasks, and synchronization.
+	•	GPU architecture vs. CPU (how GPUs handle parallel workloads).
+
+5. Command-Line Proficiency
+
+	•	Linux Basics: Ubuntu is your development environment, so a good command of working with the terminal is essential.
+	•	Navigating directories, file manipulation (creating, editing, and moving files).
+	•	Installing software via apt, managing packages with pip or conda.
+	•	Bash Scripting: You’ll automate tasks in Week 3, so some familiarity with shell scripting (loops, conditions, basic I/O operations) is recommended.
+
+6. GPU/Hardware Knowledge
+
+	•	GPU Architecture Basics: Understanding how GPUs work (parallel execution, memory hierarchy) will help in OpenCL.
+	•	Drivers and Dependencies: Knowing how to install and configure drivers (especially for GPUs) on Ubuntu.
+
+7. OpenCL Basics (Optional)
+
+	•	This is a focus for Week 2, but it would be helpful to understand:
+	•	What OpenCL is used for (cross-platform parallel computing API).
+	•	General purpose GPU (GPGPU) computing.
+	•	How a typical OpenCL program is structured (kernels, command queues, buffers, etc.).
+
+8. Ubuntu 24 Basic Setup
+
+	•	Operating System Familiarity: Comfortable navigating Ubuntu, installing software, managing users, and configuring system settings.
+	•	Ubuntu System Tools: Basic understanding of system monitoring tools like htop, iostat, and GPU tools (nvidia-smi, clinfo).
+
+Recommended Preparation Before Starting
+
+	•	Python: Brush up on Python, especially libraries like NumPy and TensorFlow. Do a quick refresher on model training and saving.
+	•	C++: Learn the basics of C++ syntax (variables, pointers, memory allocation, functions, etc.). You won’t need deep expertise, but familiarity is helpful for understanding TensorFlow Lite internals.
+	•	OpenCL Introduction: Watch or read introductory materials on OpenCL to get a sense of how it fits into the bigger picture.
+	•	Linux Terminal: Make sure you’re comfortable navigating and working in the Linux terminal.
+
+With these prerequisites covered, you’ll be ready to dive into the one-month learning roadmap with a solid foundation!
