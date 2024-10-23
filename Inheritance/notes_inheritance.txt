@@ -1,0 +1,8 @@
+	#Summary
+
+	•Inheritance allows code reuse and establishes a hierarchical relationship.
+	•The Diamond Problem arises in multiple inheritance scenarios but can be 
+	 resolved using virtual inheritance.
+	•The examples illustrate how to implement inheritance and handle the 
+	 diamond problem in C++
+    
