@@ -1,0 +1,4 @@
+	•	Pointers to Objects allow dynamic memory management and object manipulation.
+	•	Abstract Classes are used as base classes and cannot be instantiated directly.
+	•	Typecasting in C++ provides various ways to convert data types safely.
+	•	The this Pointer allows access to the current object within class member functions.
