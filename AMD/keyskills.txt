@@ -94,12 +94,12 @@ Advanced C++ Concepts:
 ------------------------------------------------------------------------------------------
 Relevant to TensorFlow Lite and OpenCL:
 
-	    TensorFlow Lite:
+	#    TensorFlow Lite:
 	•	Understanding of interpreter patterns
 	•	Delegate mechanisms in TensorFlow Lite (especially for hardware acceleration like GPU or NNAPI)
 	•	Cross-compilation (for ARM architectures)
 
-		OpenCL:
+	#	OpenCL:
 	•	Parallel programming models
 	•	Working with OpenCL kernels
 	•	Memory management between CPU and GPU
