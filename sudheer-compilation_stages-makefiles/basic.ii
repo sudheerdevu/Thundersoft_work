@@ -59390,18 +59390,10 @@ extern __attribute__((__visibility__("default"))) wostream wclog;
 
 }}
 # 2 "basic.cpp" 2
+# 25 "basic.cpp"
 using namespace std;
-
-void sudheer(int &r){r+=5;}
 int main(){
-    int i=0;
-    int &ri=i;
-    cout<<i<<endl;
-    cout<<ri<<endl;
-
-    sudheer(ri);
-
-    cout<<i<<endl;
-    cout<<ri<<endl;
+    int r=2;
+    cout<<"result is:"<<3.14*r<<endl;
     return 0;
 }
