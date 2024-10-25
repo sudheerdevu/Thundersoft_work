@@ -10,7 +10,7 @@ OBJECT = s.o
 all: $(TARGET)
 
 $(PREPROCESSED): $(SRC)
-	$(CC) -E $(SRC) -o $(PREPROCESSED)
+	$(CC) -E $(SRC) -o $(PREPROCESSED) 
 
 $(ASSEMBLY): $(SRC)
 	$(CC) -S $(SRC) -o $(ASSEMBLY)

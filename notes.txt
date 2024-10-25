@@ -4,3 +4,4 @@ lib - shared and static
 
 objs - .o file -- object code
 
+phony target in makefile  .PHONY  v
