@@ -1,0 +1,12 @@
+structure of c++ program:
+
+include files
+class declaration
+class functions and definitions
+main function program
+
+.....
+object oriented programming
+procedure programming 
+assembly language
+machine language - 1,0
