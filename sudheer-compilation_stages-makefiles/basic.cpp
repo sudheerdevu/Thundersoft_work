@@ -1,4 +1,4 @@
-#include<iostream>
+
 /*using namespace std;
 
 void sudheer(int &r){r+=5;}
@@ -21,6 +21,7 @@ int main(){
 //cant use reference to reference
 */
 
+#include<iostream>
 #define PI 3.14
 using namespace std;
 int main(){

@@ -1,0 +1,6 @@
+bin - executable (a.out)
+
+lib - shared and static
+
+objs - .o file -- object code
+
