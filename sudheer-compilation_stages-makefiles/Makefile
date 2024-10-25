@@ -1,8 +1,8 @@
 CC = g++
 CFlags = -Wall -g -O2 -std=c++11
-TARGET = reference
+TARGET = basic
 
-SRC = reference.cpp
+SRC = basic.cpp
 PREPROCESSED = s.i
 ASSEMBLY = s.s
 OBJECT = s.o
