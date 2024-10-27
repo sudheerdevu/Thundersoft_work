@@ -1,0 +1,12 @@
+user defined datatypes:
+structure union class enumeration
+
+derived type:
+array function pointer
+
+built in:
+int    - 4 bytes 
+char   -1 byte
+float   - 4 bytes
+boolean   -boolean
+
