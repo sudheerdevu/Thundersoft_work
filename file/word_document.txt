@@ -1,0 +1,53 @@
+make file without automatic variables : { $@ , $^ ,$<}
+
+output:operation.o program1.o
+	@gcc operation.o program1.o -o output
+operation.o:operation.c
+	@gcc -c operation.c -o operation.o
+program1.o:program1.c
+	@gcc -c program1.c -o program1.o
+.PHONY :clean
+clean:
+	rm -f *.o output
+
+------------------------------------------------------------
+
+make file with automatic variables:
+
+output:operation.o program1.o
+	@gcc $^ -o $@
+operation.o:operation.c
+	@gcc -c $< -o $@
+program1.o:program1.c
+	@gcc -c $< -o $@
+	
+.PHONY :clean
+clean:
+	@rm -f *.o output
+
+
+---------------------------------------------------
+DESCRIPTION FOR AUTOVARIABLE:
+
+
+Common Automatic Variables:
+
+	•	$@: The name of the target.
+	•	$<: The first prerequisite (usually the input file).
+	•	$^: All prerequisites.
+	•	$?: All prerequisites that are newer than the target.
+
+----------------------------------------------------------------
+
+example program:
+
+  program1.c
+	#include<stdio.h>
+#include "operation.h"
+int main(){
+    int i=100;
+    int x=10,y=5,z;
+    z=add(x,y);
+    printf("sum is: %d",z);
+    return 0;
+}
