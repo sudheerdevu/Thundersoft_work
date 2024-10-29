@@ -1,3 +1,4 @@
+
 make file without automatic variables : { $@ , $^ ,$<}
 
 output:operation.o program1.o
@@ -41,7 +42,8 @@ Common Automatic Variables:
 
 example program:
 
-  program1.c
+1.program1.c
+
 	#include<stdio.h>
 #include "operation.h"
 int main(){
@@ -51,3 +53,43 @@ int main(){
     printf("sum is: %d",z);
     return 0;
 }
+
+2.operation.h
+
+ #ifndef OPERATION_H
+#define OPERATION_H
+
+int add(int a, int b);
+int sub(int a, int b);
+
+#endif
+
+3.operation.c
+
+#include  "operation.h"
+int add(int x ,int y){ return x+y;}
+int sub(int x, int y){return x-y;}
+
+how to run these files?
+have a look on make file you will get to know..
+
+final makefile for the programs :
+
+makefile
+ prerequisites: store above example programs in a single folder 
+ in terminal navigate to folder and run using "make" command 
+
+terminal looks like ....
+
+vaddikasulu@Vaddikasulu-MacBook-Air Thundersoft-work % cd file 
+vaddikasulu@Vaddikasulu-MacBook-Air file % make
+gcc -c operation.c -o operation.o
+gcc -c program1.c -o program1.o
+gcc operation.o program1.o -o output
+vaddikasulu@Vaddikasulu-MacBook-Air file % ./ouput
+zsh: no such file or directory: ./ouput
+vaddikasulu@Vaddikasulu-MacBook-Air file % ./output 
+sum is: 15                                                                                                
+
+
+

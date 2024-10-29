@@ -1,0 +1,51 @@
+example program 2:
+
+
+
+#include <stdio.h>
+#include<math.h>
+int main(){
+    int x=18;
+    printf("%d %f",x,sqrt(x));
+    return 0;
+}
+ 
+
+ when we execute the above program with the command
+ gcc test.c 
+ we will encounter the following error stating:
+ "in function main: undefined reference to sqrt."
+
+then we will use 
+ gcc test.c -lm -o output
+ ./output
+
+ now we will get output
+
+ makefile(automatic variable) for the program listed below:
+
+CC= gcc
+CFLAGS= -Wall -g
+output: test.o
+	@$(CC) $< -lm -o $@
+test.o: test.c
+	@$(CC) -c $< -o $@
+clean:
+	@rm -f *.o output
+
+makefile with flags:
+
+
+CC = gcc
+CFLAGS = -Wall -g
+LFLAGS = -lm
+SRCS := $(wildcard *.c)
+BINS = output
+OBJS := $(SRCS:%.c=%.o)
+all: $(OBJS) $(BINS)
+$(BINS): $(OBJS)
+        $(CC) $^ $(LFLAGS) -o $@
+%.o: %.c
+        $(CC)  $(CFLAGS) -c $< -o $@
+clean:
+        rm -f  $(OBJS) $(BINS)
