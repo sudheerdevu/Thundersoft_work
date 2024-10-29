@@ -1,0 +1,127 @@
+Here’s a simple Makefile to automate the compilation and linking of your C++ program. This Makefile will compile main.cpp and Sorting.cpp into object files and then link them to create the final executable sudheer.
+
+# Compiler
+CXX = g++
+
+# Compiler flags
+CXXFLAGS = -Wall -g
+
+# Target executable
+TARGET = sudheer
+
+# Source files
+SRCS = main.cpp Sorting.cpp
+
+# Object files
+OBJS = main.o Sorting.o
+
+# Default target
+all: $(TARGET)
+
+# Rule to build the target executable
+$(TARGET): $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
+
+# Rule to build main.o
+main.o: main.cpp
+	$(CXX) $(CXXFLAGS) -c main.cpp
+
+# Rule to build Sorting.o
+Sorting.o: Sorting.cpp
+	$(CXX) $(CXXFLAGS) -c Sorting.cpp
+
+# Clean up generated files
+clean:
+	rm -f $(OBJS) $(TARGET)
+
+Explanation
+
+	•	Variables:
+	•	CXX: The C++ compiler (g++).
+	•	CXXFLAGS: Flags passed to the compiler; -Wall enables all warnings, and -g enables debugging symbols.
+	•	TARGET: The name of the final executable (sudheer).
+	•	SRCS and OBJS: Lists of source and object files.
+	•	Targets:
+	•	all: The default target that builds the executable by depending on $(TARGET).
+	•	$(TARGET): This target links the object files to produce the executable.
+	•	main.o and Sorting.o: These targets compile each source file individually into an object file.
+	•	clean: A utility target to remove the generated files (.o files and the executable).
+
+Usage
+
+To compile the program, simply run:
+
+make
+
+To clean up the directory (remove object files and the executable), run:
+
+make clean
+
+This Makefile will automatically recompile only the files that have changed, making the build process efficient.
+
+
+
+
+
+makefile with automatic variables:
+Using automatic variables in a Makefile can make the rules simpler and more maintainable. Here’s how you can use automatic variables in your Makefile:
+
+	•	$@: The target name of the rule.
+	•	$<: The first prerequisite (typically used in compilation rules).
+	•	$^: All prerequisites (used in linking rules).
+
+Here’s an optimized version of the Makefile with automatic variables:
+
+# Compiler
+CXX = g++
+
+# Compiler flags
+CXXFLAGS = -Wall -g
+
+# Target executable
+TARGET = sudheer
+
+# Source files
+SRCS = main.cpp Sorting.cpp
+
+# Object files (replace .cpp with .o)
+OBJS = $(SRCS:.cpp=.o)
+
+# Default target
+all: $(TARGET)
+
+# Rule to build the target executable
+$(TARGET): $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $@ $^
+
+# Rule to compile each .cpp file into .o
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+# Clean up generated files
+clean:
+	rm -f $(OBJS) $(TARGET)
+
+Explanation
+
+	•	$(TARGET): $(OBJS): The target executable depends on the object files.
+	•	Command: $(CXX) $(CXXFLAGS) -o $@ $^
+	•	$@ refers to the target (sudheer).
+	•	$^ expands to all prerequisites ($(OBJS)), which are all object files.
+	•	%.o: %.cpp: This is a pattern rule that matches any .cpp file to compile it into a corresponding .o file.
+	•	Command: $(CXX) $(CXXFLAGS) -c $< -o $@
+	•	$< refers to the first prerequisite (the .cpp file being compiled).
+	•	$@ refers to the target (the resulting .o file).
+	•	clean: Removes all generated object files and the executable.
+
+Usage
+
+To compile the program:
+
+make
+
+To clean up:
+
+make clean
+
+This Makefile with automatic variables is more concise and flexible, especially if you add more source files later.
