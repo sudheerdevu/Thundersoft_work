@@ -1,0 +1,4 @@
+classes and objects
+constructors and destructors
+inheritance - full
+pointers - full
