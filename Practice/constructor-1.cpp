@@ -10,7 +10,7 @@ public:
     }
 
     A(const A& a) : m(a.m) {
-        cout << "Copy constructor called" << endl;
+        cout << "Copy constructor called" << endl;                                      
     }
 
     A& operator=(const A& a) {

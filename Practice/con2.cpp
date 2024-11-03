@@ -22,12 +22,12 @@ class sudheer{
         return balance;
     }
     void setholder(string newholder){
-        acholder=newholder;
+        this->acholder=newholder;
     }
 };
 
 int main(){
-    sudheer obj("success",-1);
+    sudheer obj("success",3);
     //obj.setholder("s");
     cout<<obj.getacholder()<<endl;
     cout<<obj.getbalance()<<endl;
