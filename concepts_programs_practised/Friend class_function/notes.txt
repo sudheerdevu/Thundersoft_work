@@ -1,0 +1,2 @@
+	•	Friend Functions: Non-member functions that have access to private and protected members of a class. Useful for operator overloading and utility functions.
+	•	Friend Classes: All member functions of a friend class have access to the private and protected members of another class. Useful when two classes need close collaboration.

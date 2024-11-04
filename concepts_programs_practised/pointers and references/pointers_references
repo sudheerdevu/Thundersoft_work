@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+void modifyPointer(int* ptr) {
+    if (ptr) {
+        *ptr = 20;  // Dereference to modify value at the pointer's address
+    }
+}
+
+void modifyReference(int& ref) {
+    ref = 30;  // Modify directly using reference
+}
+
+int main() {
+    int x = 10;
+
+    // Using pointer
+    int* ptr = &x;
+    modifyPointer(ptr);
+    cout << "Value after modifyPointer: " << x << endl;  // Outputs 20
+
+    // Using reference
+    modifyReference(x);
+    cout << "Value after modifyReference: " << x << endl;  // Outputs 30
+
+    return 0;
+}

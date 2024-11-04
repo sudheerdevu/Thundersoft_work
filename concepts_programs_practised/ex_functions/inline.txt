@@ -1,0 +1,138 @@
+In C++, an inline function is a function that suggests to the compiler to expand the function’s code inline, at the place where it is called, rather than performing a normal function call. Inline functions are typically used to improve performance, especially for small, frequently called functions, by avoiding the overhead of a function call.
+
+How Inline Functions Work
+
+When you define a function as inline, the compiler attempts to replace the function call with the actual code of the function at compile time. This eliminates the overhead associated with calling a function, such as saving registers, setting up a stack frame, and jumping to the function code.
+
+However, it’s only a suggestion to the compiler, which may ignore the inline request if the function is too complex or if inlining would not provide significant performance benefits.
+
+Declaring an Inline Function
+
+To declare a function as inline, use the inline keyword before the function definition:
+
+inline int add(int a, int b) {
+    return a + b;
+}
+
+Explanation:
+
+	•	inline keyword is placed before the return type.
+	•	The compiler tries to replace calls to add with the expression a + b directly in the code, avoiding the function call.
+
+Example of an Inline Function
+
+#include <iostream>
+using namespace std;
+
+inline int square(int x) {
+    return x * x;
+}
+
+int main() {
+    cout << "Square of 5: " << square(5) << endl;
+    cout << "Square of 10: " << square(10) << endl;
+    return 0;
+}
+
+Explanation:
+
+	•	square is an inline function, so each call to square(5) and square(10) may be replaced by 5 * 5 and 10 * 10 at compile time, respectively.
+	•	This reduces function call overhead for the square function, which is small and simple.
+
+Output:
+
+Square of 5: 25
+Square of 10: 100
+
+When to Use Inline Functions
+
+Inline functions are most effective for:
+
+	1.	Small functions: Functions with very few lines, like one-liners or functions with a few arithmetic operations.
+	2.	Frequently called functions: Functions that are called repeatedly in performance-critical code (e.g., inside loops).
+	3.	Getter and setter functions: Small functions in classes that simply retrieve or set member variables.
+
+Defining Inline Functions Inside a Class
+
+Functions defined inside a class definition are automatically considered inline by the compiler.
+
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+private:
+    int width, height;
+
+public:
+    Rectangle(int w, int h) : width(w), height(h) {}
+
+    int area() const { return width * height; }  // Inline member function
+};
+
+int main() {
+    Rectangle rect(10, 5);
+    cout << "Area: " << rect.area() << endl;
+    return 0;
+}
+
+Explanation:
+
+	•	area is defined inside the class and is therefore considered inline.
+	•	For small member functions, this reduces function call overhead.
+
+Output:
+
+Area: 50
+
+Pros and Cons of Inline Functions
+
+Pros
+
+	1.	Performance Improvement: Reduces function call overhead by expanding the code inline.
+	2.	Encapsulation with Efficiency: Allows for encapsulation without sacrificing performance in cases where a function simply wraps an expression.
+	3.	Reduces Call Stack Usage: Since the function call is avoided, the call stack is not used.
+
+Cons
+
+	1.	Increased Code Size: Inline functions can increase the binary size (code bloat), as the function’s code is duplicated at each call site.
+	2.	Reduced Debugging Ease: Inlining can make debugging harder, as there is no clear function call in the stack trace.
+	3.	Not Guaranteed: The compiler may ignore the inline request if the function is too complex or if inlining would increase code size significantly.
+
+Compiler’s Control Over Inlining
+
+The compiler has control over whether a function is actually inlined, even if you use the inline keyword. This decision is based on several factors:
+
+	•	Function Complexity: Large or complex functions may not be inlined.
+	•	Number of Calls: If the function is called many times, the compiler may inline it to improve performance.
+	•	Optimization Level: Compiler optimization settings (e.g., -O1, -O2, -O3 in GCC) affect whether functions are inlined.
+
+Inline and Recursion
+
+While technically possible, recursion is generally incompatible with inlining. Since the compiler would have to expand each call in place, which leads to an infinite loop of expansion, most compilers will not inline recursive functions.
+
+inline int factorial(int n) {
+    return (n <= 1) ? 1 : n * factorial(n - 1); // Compiler likely won't inline
+}
+
+The above function is unlikely to be inlined because of its recursive nature.
+
+Forced Inlining with __forceinline (Compiler-Specific)
+
+Some compilers provide attributes to force inlining when inline alone is ignored. For example:
+
+	•	GCC/Clang: __attribute__((always_inline))
+	•	MSVC: __forceinline
+
+inline __attribute__((always_inline)) int add(int a, int b) {  // GCC/Clang
+    return a + b;
+}
+
+Summary
+
+	•	Inline functions aim to reduce function call overhead by expanding code directly at the call site.
+	•	Effective for small functions like one-liners, getters, and setters that are called frequently.
+	•	Automatic inlining occurs for functions defined inside class definitions.
+	•	Use cautiously: Overusing inline functions can increase code size and reduce maintainability.
+	•	Compiler’s discretion: The compiler decides whether to inline based on function complexity and optimization settings.
+
+Using inline functions is a useful technique for performance optimization, but it should be balanced with code maintainability and readability.
