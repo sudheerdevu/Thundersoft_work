@@ -299,4 +299,324 @@ int main() {
     return 0;
 }
 
-These exercises cover the key concepts you’ve studied with an emphasis on object-oriented programming, memory management, and core C++ syntax and functionality. They will help you reinforce your understanding and prepare you for technical interviews.
+These exercises cover the key concepts you’ve studied with an emphasis on object-oriented programming, memory management, and core C++ syntax and functionality. They will help you reinforce your understanding and prepare you for technical interviews. 
+
+chat-2
+
+
+Certainly! Here are additional interview-style programming exercises for each concept, with a focus on deeper understanding and practical applications.
+
+1. new and delete
+
+Problem: Implement a class DynamicArray that dynamically allocates an integer array of a given size. Add a method to set values at specific indices, get values, and resize the array. Include a destructor to release memory.
+
+Sample Code Structure:
+
+#include <iostream>
+using namespace std;
+
+class DynamicArray {
+private:
+    int* arr;
+    int size;
+
+public:
+    DynamicArray(int s) : size(s) {
+        arr = new int[size];
+    }
+
+    ~DynamicArray() {
+        delete[] arr;
+    }
+
+    void setValue(int index, int value) {
+        if (index >= 0 && index < size) {
+            arr[index] = value;
+        }
+    }
+
+    int getValue(int index) const {
+        if (index >= 0 && index < size) {
+            return arr[index];
+        }
+        return -1;  // Indicate invalid access
+    }
+
+    void resize(int newSize) {
+        int* newArr = new int[newSize];
+        int minSize = (size < newSize) ? size : newSize;
+        for (int i = 0; i < minSize; ++i) {
+            newArr[i] = arr[i];
+        }
+        delete[] arr;
+        arr = newArr;
+        size = newSize;
+    }
+};
+
+int main() {
+    DynamicArray da(5);
+    da.setValue(0, 10);
+    da.setValue(1, 20);
+    cout << "Value at index 0: " << da.getValue(0) << endl;
+
+    da.resize(7);
+    da.setValue(6, 30);
+    cout << "Value at index 6: " << da.getValue(6) << endl;
+
+    return 0;
+}
+
+2. Scope Resolution Operator
+
+Problem: Create a Library class with a static integer totalBooks. Define methods addBooks and showTotalBooks using the scope resolution operator to manage the total count of books.
+
+Sample Code Structure:
+
+#include <iostream>
+using namespace std;
+
+class Library {
+private:
+    static int totalBooks;
+
+public:
+    static void addBooks(int count);
+    static void showTotalBooks();
+};
+
+int Library::totalBooks = 0;
+
+void Library::addBooks(int count) {
+    totalBooks += count;
+}
+
+void Library::showTotalBooks() {
+    cout << "Total books in library: " << totalBooks << endl;
+}
+
+int main() {
+    Library::addBooks(10);
+    Library::showTotalBooks();
+    Library::addBooks(5);
+    Library::showTotalBooks();
+    return 0;
+}
+
+3. Reference
+
+Problem: Write a function swapUsingReferences to swap two integers using references. Then use this function to sort three integers in ascending order.
+
+Sample Code Structure:
+
+#include <iostream>
+using namespace std;
+
+void swapUsingReferences(int& a, int& b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+void sortThree(int& x, int& y, int& z) {
+    if (x > y) swapUsingReferences(x, y);
+    if (x > z) swapUsingReferences(x, z);
+    if (y > z) swapUsingReferences(y, z);
+}
+
+int main() {
+    int a = 30, b = 10, c = 20;
+    sortThree(a, b, c);
+    cout << "Sorted values: " << a << ", " << b << ", " << c << endl;
+    return 0;
+}
+
+4. Functions and Inline Functions
+
+Problem: Write an inline function cube to calculate the cube of a number. Use it in a program that calculates the cubes of numbers from 1 to 5.
+
+Sample Code Structure:
+
+#include <iostream>
+using namespace std;
+
+inline int cube(int x) {
+    return x * x * x;
+}
+
+int main() {
+    for (int i = 1; i <= 5; ++i) {
+        cout << "Cube of " << i << " is " << cube(i) << endl;
+    }
+    return 0;
+}
+
+5. Static Data Members and Static Member Functions
+
+Problem: Implement a Counter class where each object has an ID. Use a static data member to generate unique IDs for each new object created.
+
+Sample Code Structure:
+
+#include <iostream>
+using namespace std;
+
+class Counter {
+private:
+    int id;
+    static int nextId;
+
+public:
+    Counter() : id(++nextId) {}
+
+    int getId() const {
+        return id;
+    }
+};
+
+int Counter::nextId = 0;
+
+int main() {
+    Counter c1, c2, c3;
+    cout << "Counter IDs: " << c1.getId() << ", " << c2.getId() << ", " << c3.getId() << endl;
+    return 0;
+}
+
+6. const Keyword Uses
+
+Problem: Create a class Rectangle with a const member function getDiagonal that calculates the diagonal length. Use const for all function parameters that should not change.
+
+Sample Code Structure:
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+class Rectangle {
+private:
+    int width, height;
+
+public:
+    Rectangle(int w, int h) : width(w), height(h) {}
+
+    double getDiagonal() const {
+        return sqrt(width * width + height * height);
+    }
+};
+
+int main() {
+    const Rectangle rect(3, 4);
+    cout << "Diagonal: " << rect.getDiagonal() << endl;
+    return 0;
+}
+
+7. Array of Objects
+
+Problem: Create a class Book with title, author, and price. Create an array of Book objects and allow the user to enter details for each book. Then display them.
+
+Sample Code Structure:
+
+#include <iostream>
+using namespace std;
+
+class Book {
+private:
+    string title, author;
+    double price;
+
+public:
+    Book(string t = "", string a = "", double p = 0.0) : title(t), author(a), price(p) {}
+
+    void setDetails(string t, string a, double p) {
+        title = t;
+        author = a;
+        price = p;
+    }
+
+    void display() const {
+        cout << "Title: " << title << ", Author: " << author << ", Price: $" << price << endl;
+    }
+};
+
+int main() {
+    Book books[3];
+    for (int i = 0; i < 3; ++i) {
+        string title, author;
+        double price;
+        cout << "Enter title, author, and price for book " << i + 1 << ": ";
+        cin >> title >> author >> price;
+        books[i].setDetails(title, author, price);
+    }
+    cout << "\nBook Details:\n";
+    for (int i = 0; i < 3; ++i) {
+        books[i].display();
+    }
+    return 0;
+}
+
+8. Friend
+
+Problem: Create a class Circle with a private radius. Write a friend function compareArea that takes two Circle objects and returns the larger circle.
+
+Sample Code Structure:
+
+#include <iostream>
+using namespace std;
+
+class Circle {
+private:
+    double radius;
+
+public:
+    Circle(double r) : radius(r) {}
+    double getArea() const { return 3.14159 * radius * radius; }
+
+    friend const Circle& compareArea(const Circle& c1, const Circle& c2);
+};
+
+const Circle& compareArea(const Circle& c1, const Circle& c2) {
+    return (c1.getArea() > c2.getArea()) ? c1 : c2;
+}
+
+int main() {
+    Circle c1(5.0), c2(7.0);
+    const Circle& larger = compareArea(c1, c2);
+    cout << "The circle with the larger area has radius: " << (larger.getArea() / 3.14159) << endl;
+    return 0;
+}
+
+9. Constructors
+
+Problem: Implement a class Date with day, month, and year. Add a parameterized constructor, a default constructor, and a copy constructor. Demonstrate object creation using each.
+
+Sample Code Structure:
+
+#include <iostream>
+using namespace std;
+
+class Date {
+private:
+    int day, month, year;
+
+public:
+    Date() : day(1), month(1), year(2000) { cout << "Default constructor\n"; }
+    Date(int d, int m, int y) : day(d), month(m), year(y) { cout << "Parameterized constructor\n"; }
+    Date(const Date& d) : day(d.day), month(d.month), year(d.year) { cout << "Copy constructor\n"; }
+
+    void display() const {
+        cout << day << "/" << month << "/" << year << endl;
+    }
+};
+
+int main() {
+    Date date1;
+    Date date2(25, 12, 2021);
+    Date date3 = date2;
+
+    cout << "date1: "; date1.display();
+    cout << "date2: "; date2.display();
+    cout << "date3: "; date3.display();
+
+    return 0;
+}
+
+These additional exercises are designed to help you understand the nuances of C++ concepts and give you more practice with real-world applications. They will enhance your ability to tackle interview questions and build a deeper understanding of object-oriented programming in C++.
