@@ -1,0 +1,52 @@
+Here are revised OOP practice questions without polymorphism:
+
+1. Basic Class and Object
+
+	•	Write a C++ program to create a class Student with private member variables name, rollNumber, and marks. Include member functions to set and get these values and display them.
+
+2. Inheritance
+
+	•	Single Inheritance: Create a base class Employee with attributes like name and id. Derive a class Manager from Employee, adding attributes like department and teamSize. Write a function to display the details of a manager.
+
+	•	Multilevel Inheritance: Create a base class Person with name and age as attributes. Derive a class Employee with salary as an attribute, and further derive a class Developer that adds an attribute programmingLanguage. Write functions to display details at each level.
+    
+	•	Multiple Inheritance: Create two base classes, Academic and Sports, each having respective attributes. Derive a class Student that inherits from both classes and displays both academic and sports details.
+
+3. Encapsulation and Data Hiding
+
+	•	Create a class BankAccount with private attributes accountNumber, balance, and accountHolderName. Include functions to deposit, withdraw, and check the balance. Ensure that withdrawals do not allow the balance to go below zero.
+
+4. Operator Overloading
+
+	•	Overload the + operator for a Complex class to add two complex numbers.
+	•	Overload the == operator for a Fraction class to compare two fractions.
+
+5. Constructors and Destructors
+
+	•	Create a Book class with parameterized constructors and a destructor that displays a message when a book object is created and destroyed.
+
+6. Friend Function
+
+	•	Create two classes Box and Container. Write a friend function that calculates the volume of Container using Box dimensions.
+
+7. Copy Constructor
+
+	•	Create a class Smartphone with attributes brand and price. Write a copy constructor to initialize an object by copying another object of the same class.
+
+8. Static Members
+
+	•	Create a class Library with a static data member totalBooks. Each time a book is added, increment totalBooks. Include functions to add a book and display the total number of books.
+
+9. Inheritance without Function Overriding
+
+	•	Create a base class Vehicle with a function display() to show basic vehicle information. Derive classes Car and Bike that add their own unique attributes, without overriding display(). Create functions to show details for each derived class separately.
+
+10. Type of Inheritance and Access Specifiers
+
+	•	Create a class Base with both private and public attributes. Derive ProtectedDerived using protected inheritance and PublicDerived using public inheritance. Write functions to check the accessibility of Base members in each derived class.
+
+11. Templates with Classes
+
+	•	Create a template class Pair that holds two values of any type. Include functions to set and display the values.
+
+These exercises should give you a good foundation in OOP principles like inheritance, encapsulation, and data hiding without involving polymorphism. Let me know if you’d like to go through any specific questions!
