@@ -7,14 +7,14 @@ protected:
     string name;
     int id;
 public:
-    friend void setdetails(Employee &e,const string &n, int i);
+    void setdetails(string &n, int i){
+    name=n;
+    id=i;
+}
     string getname(){return name;}
     int getid(){return id;}
 };
-void setdetails(Employee &e,const string &n, int i){
-    e.name=n;
-    e.id=i;
-}
+
 
 
 class Manager:public Employee{
@@ -22,20 +22,19 @@ class Manager:public Employee{
         string department;
         int teamsize;
     public: 
-        friend void setmdetails(Manager &m,const string &d, int t);
+       void setmdetails(string &d, int t){
+            department=d;
+            teamsize=t;
+        } 
         void display(){
+            cout<<name<<id<<department<<teamsize<<endl;
         }
 };
-void setmdetails(Manager &m,const string &d, int t){
-    m.department=d;
-    m.teamsize=t;
-} 
-
 
 int main(){
     Manager m;
-    setdetails(m,"vivek",420);
-    setmdetails(m,"cse",2);
+    m.setdetails("vivek",420);
+    m.setmdetails("cse",2);
     m.display();
     return 0;
 }
