@@ -6,7 +6,9 @@ private:
     int value;
 
 public:
-    MyClass(int v) : value(v) {}
+    MyClass(int v) : value(v) {
+        cout<<value<<endl;
+    }
 
     MyClass(const MyClass& other) {  // Copy constructor
         value = other.value;
