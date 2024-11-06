@@ -6,8 +6,8 @@ private:
     int variable;
 public:
     Sudheer(int v): variable(v){cout<<variable<<endl;}
-    Sudheer(const Sudheer &v){
-        this->variable=v.variable;cout<<variable<<endl;
+    Sudheer(const Sudheer &v): variable(v.variable){
+        cout<<variable<<endl;
     }
     void display()const{
         cout<<variable<<endl;
