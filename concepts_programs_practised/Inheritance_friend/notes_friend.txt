@@ -1,0 +1,110 @@
+Here’s the full C++ code for each of the scenarios you mentioned.
+
+1. Friend Function
+
+This example shows how a friend function can access private and protected members of a class.
+
+#include <iostream>
+
+class MyClass {
+private:
+    int privateVar;
+protected:
+    int protectedVar;
+public:
+    MyClass() : privateVar(10), protectedVar(20) {}
+
+    // Declaring a friend function
+    friend void friendFunction(MyClass &obj);
+};
+
+void friendFunction(MyClass &obj) {
+    // Accessing private and protected members directly
+    std::cout << "Private Variable: " << obj.privateVar << std::endl;
+    std::cout << "Protected Variable: " << obj.protectedVar << std::endl;
+}
+
+int main() {
+    MyClass obj;
+    friendFunction(obj);  // Call the friend function
+    return 0;
+}
+
+2. Member Function of a Friend Class
+
+This example demonstrates how a member function of a friend class can access private and protected members.
+
+#include <iostream>
+
+class FriendClass; // Forward declaration
+
+class MyClass {
+private:
+    int privateVar;
+protected:
+    int protectedVar;
+public:
+    MyClass() : privateVar(10), protectedVar(20) {}
+
+    // Declaring FriendClass as a friend
+    friend class FriendClass;
+};
+
+class FriendClass {
+public:
+    void accessMembers(MyClass &obj) {
+        // Accessing private and protected members directly
+        std::cout << "Private Variable: " << obj.privateVar << std::endl;
+        std::cout << "Protected Variable: " << obj.protectedVar << std::endl;
+    }
+};
+
+int main() {
+    MyClass obj;
+    FriendClass friendObj;
+    friendObj.accessMembers(obj);  // Call the member function of FriendClass
+    return 0;
+}
+
+3. Member Function of a Derived Class
+
+This example shows how a member function of a derived class can access protected members but not private members of the base class.
+
+#include <iostream>
+
+class BaseClass {
+private:
+    int privateVar;
+protected:
+    int protectedVar;
+public:
+    BaseClass() : privateVar(10), protectedVar(20) {}
+
+    int getPrivateVar() const { return privateVar; }  // Getter for privateVar
+};
+
+class DerivedClass : public BaseClass {
+public:
+    void accessBaseMembers() {
+        // Cannot access privateVar directly
+        // std::cout << "Private Variable: " << privateVar << std::endl; // Error
+        
+        // Accessing protected member directly
+        std::cout << "Protected Variable: " << protectedVar << std::endl;
+        
+        // Accessing private member via public getter function
+        std::cout << "Private Variable (via getter): " << getPrivateVar() << std::endl;
+    }
+};
+
+int main() {
+    DerivedClass derivedObj;
+    derivedObj.accessBaseMembers();  // Call the member function of DerivedClass
+    return 0;
+}
+
+Explanation of Each Code Block
+
+	1.	Friend Function: In this code, friendFunction is a non-member function declared as a friend of MyClass. It directly accesses both the privateVar and protectedVar members of MyClass.
+	2.	Member Function of a Friend Class: In this example, FriendClass is a friend of MyClass. This allows the accessMembers function within FriendClass to access the private and protected members of MyClass.
+	3.	Member Function of a Derived Class: In this example, DerivedClass inherits from BaseClass. The accessBaseMembers function can access the protectedVar (since it’s protected), but it cannot access privateVar directly. However, it can use the public getter function getPrivateVar() to access the private variable indirectly.
