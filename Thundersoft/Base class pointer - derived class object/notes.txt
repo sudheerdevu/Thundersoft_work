@@ -12,4 +12,16 @@ class base{
 
 
  here comes the concept base class pointer derived class
- object here we can call 
+ object here we can call like this
+
+ int main(){
+    base *p;
+    p = new derived();
+
+    p->fun1();
+    p->fun2();
+    p->fun3();
+    p->fun4();
+    p->fun5();
+
+ }
