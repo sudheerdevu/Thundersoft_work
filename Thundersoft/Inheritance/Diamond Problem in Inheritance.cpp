@@ -9,7 +9,7 @@ public:
     }
 };
 
-// Derived class B inheriting from A
+// Derived class B inheriting from A 
 class B : virtual public A {
 public:
     void show() {
