@@ -16,6 +16,8 @@ class Derived: public Base{
 
 int main(){
     Derived d;
-    d.fun1();d.fun2();
+    Base *ptr=&d;
+    ptr->fun1();
+    //ptr->fun2();    
     return 0;
 }
