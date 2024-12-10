@@ -1,5 +1,0 @@
-Hello everyone!
-How are you?
-How is your learning going on?
-We are learning File Handling now.
-Happy learning
