@@ -8,6 +8,7 @@ int main() {
 
     map<char, int> freq;
 
+
     for (char ch : str) {
         if (ch != ' ') {
             freq[ch]++;
