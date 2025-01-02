@@ -9,8 +9,10 @@ using namespace std;
 
 #define MIN_BALANCE 500
 
+// Exception class for insufficient funds
 class InsufficientFunds {};
 
+// Account class to represent individual bank accounts
 class Account {
 private:
     long accountNumber;
@@ -35,8 +37,10 @@ public:
     friend ostream &operator<<(ostream &os, const Account &acc);
 };
 
+// Initialize static variable
 long Account::NextAccountNumber = 0;
 
+// Bank class to manage multiple accounts
 class Bank {
 private:
     map<long, Account> accounts;
@@ -52,6 +56,7 @@ public:
     ~Bank();
 };
 
+// Main Function
 int main() {
     Bank b;
     Account acc;
@@ -61,10 +66,10 @@ int main() {
     float balance;
     float amount;
 
-    cout << "***Banking System***" << endl;
+    cout << "*** Welcome to the Banking System ***" << endl;
 
     do {
-        cout << "\n\tSelect one option below ";
+        cout << "\n\tSelect one option below: ";
         cout << "\n\t1 Open an Account";
         cout << "\n\t2 Balance Enquiry";
         cout << "\n\t3 Deposit";
@@ -78,10 +83,11 @@ int main() {
         try {
             switch (choice) {
                 case 1:
+                    cin.ignore(); // Clear buffer
                     cout << "Enter First Name: ";
-                    cin >> fname;
+                    getline(cin, fname);
                     cout << "Enter Last Name: ";
-                    cin >> lname;
+                    getline(cin, lname);
                     cout << "Enter Initial Balance: ";
                     cin >> balance;
                     acc = b.OpenAccount(fname, lname, balance);
@@ -93,7 +99,7 @@ int main() {
                     cout << "Enter Account Number: ";
                     cin >> accountNumber;
                     acc = b.BalanceEnquiry(accountNumber);
-                    cout << endl << "Your Account Details" << endl;
+                    cout << endl << "Your Account Details:" << endl;
                     cout << acc;
                     break;
 
@@ -103,7 +109,7 @@ int main() {
                     cout << "Enter Amount to Deposit: ";
                     cin >> amount;
                     acc = b.Deposit(accountNumber, amount);
-                    cout << endl << "Amount Deposited Successfully" << endl;
+                    cout << endl << "Amount Deposited Successfully!" << endl;
                     cout << acc;
                     break;
 
@@ -113,7 +119,7 @@ int main() {
                     cout << "Enter Amount to Withdraw: ";
                     cin >> amount;
                     acc = b.Withdraw(accountNumber, amount);
-                    cout << endl << "Amount Withdrawn Successfully" << endl;
+                    cout << endl << "Amount Withdrawn Successfully!" << endl;
                     cout << acc;
                     break;
 
@@ -121,28 +127,34 @@ int main() {
                     cout << "Enter Account Number: ";
                     cin >> accountNumber;
                     b.CloseAccount(accountNumber);
-                    cout << endl << "Account is Closed" << endl;
+                    cout << endl << "Account is Closed Successfully!" << endl;
                     break;
 
                 case 6:
+                    cout << "\nAll Accounts:\n";
                     b.ShowAllAccounts();
                     break;
 
                 case 7:
+                    cout << "Thank you for using the Banking System. Goodbye!" << endl;
                     break;
 
                 default:
-                    cout << "\nInvalid choice! Please try again.";
+                    cout << "\nInvalid choice! Please select a valid option.";
             }
-        } catch (const exception &e) {
+        } catch (const runtime_error &e) {
             cout << "Error: " << e.what() << endl;
-        } catch (InsufficientFunds &) {
+        } catch (const InsufficientFunds &) {
             cout << "Error: Insufficient funds for withdrawal." << endl;
+        } catch (...) {
+            cout << "An unexpected error occurred!" << endl;
         }
     } while (choice != 7);
 
     return 0;
 }
+
+// Account Class Definitions
 
 Account::Account(string fname, string lname, float balance) {
     NextAccountNumber++;
@@ -194,6 +206,8 @@ ostream &operator<<(ostream &os, const Account &acc) {
     return os;
 }
 
+// Bank Class Definitions
+
 Bank::Bank() {
     ifstream infile("Bank.data");
     if (!infile.is_open()) {
@@ -214,11 +228,14 @@ Bank::Bank() {
 }
 
 Account Bank::OpenAccount(string fname, string lname, float balance) {
-    ofstream outfile;
+    if (balance < MIN_BALANCE) {
+        throw runtime_error("Initial balance must be at least " + to_string(MIN_BALANCE) + ".");
+    }
+
     Account account(fname, lname, balance);
     accounts.insert({account.getAccNo(), account});
 
-    outfile.open("Bank.data", ios::trunc);
+    ofstream outfile("Bank.data", ios::trunc);
     for (const auto &acc : accounts) {
         outfile << acc.second;
     }
@@ -262,14 +279,17 @@ void Bank::CloseAccount(long accountNumber) {
 }
 
 void Bank::ShowAllAccounts() {
-    for (const auto &acc : accounts) {
-        cout << "Account " << acc.first << endl << acc.second << endl;
+    if (accounts.empty()) {
+        cout << "No accounts found!" << endl;
+    } else {
+        for (const auto &acc : accounts) {
+            cout << "Account " << acc.first << endl << acc.second << endl;
+        }
     }
 }
 
 Bank::~Bank() {
-    ofstream outfile;
-    outfile.open("Bank.data", ios::trunc);
+    ofstream outfile("Bank.data", ios::trunc);
     for (const auto &acc : accounts) {
         outfile << acc.second;
     }
