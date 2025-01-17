@@ -1,11 +1,19 @@
-#include <iostream> 
-void modify(int* x) { 
-    *x = 20;  // Modify through non-const pointer 
-} 
- 
-int main() { 
-    const int a = 10;  // Const variable 
-    modify(const_cast<int*>(&a));  // Remove const qualifier 
-    std::cout << "a: " << a << std::endl;  // Undefined behavior! 
-    return 0; 
-} 
+#include <iostream>
+using namespace std;
+class add{
+    public:
+    int num1;int num2;
+    add(int n1, int n2){
+        num1=n1;
+        num2= n2;
+    }
+    int addfunc(){
+        return num1+num2;
+    }
+};
+int main(){
+    add obj1(1,2);
+    int result = obj1.addfunc();
+    cout<<add.addfunc()<<endl;
+    return 0;
+}

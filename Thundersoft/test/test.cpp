@@ -1,11 +1,19 @@
-#include "TestHeader.h"
 #include <iostream>
-
-void testFunction() {
-    std::cout << "Compiler supports #pragma once!" << std::endl;
-}
-
-int main() {
-    testFunction();
+using namespace std;
+class add{
+    public:
+    int num1;int num2;
+    add(int n1, int n2){
+        num1=n1;
+        num2= n2;
+    }
+    int addfunc(){
+        return num1+num2;
+    }
+};
+int main(){
+    add obj1(1,2);
+    int result = obj1.addfunc();
+    cout<<obj1.addfunc()<<endl;
     return 0;
 }
