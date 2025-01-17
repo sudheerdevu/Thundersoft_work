@@ -21,29 +21,27 @@ public:
         }
     }
 
-    MyString(const MyString& other) { // Copy 
+    MyString(const MyString& other) { // Copy constructor
         if (other.data) {
             data = new char[length + 1];
             strcpy(data, other.data);
         } else {
             data = nullptr;
+            length=0;
         }
     }
 
-    MyString(MyString&& other) noexcept // Move 
-        : data(other.data), length(other.length) {
-        other.data = nullptr;
-        other.length = 0;
-    }
-
-    MyString& operator=(const MyString& other) { // Copy assignment 
+   
+    MyString& operator=(const MyString& other) { // overloaded assignment operator
         if (this == &other) {
             return *this;
         }
-        delete[] data;
-
-        length = other.length;
+        if(this->data != nullptr){
+            delete[] data;
+        }
+        
         if (other.data) {
+            length = other.length;
             data = new char[length + 1];
             strcpy(data, other.data);
         } else {
@@ -52,22 +50,11 @@ public:
         return *this;
     }
 
-    MyString& operator=(MyString&& other) noexcept { // Move assignment 
-        if (this == &other) {
-            return *this;
-        }
-        delete[] data;
-
-        data = other.data;
-        length = other.length;
-
-        other.data = nullptr;
-        other.length = 0;
-        return *this;
-    }
 
     ~MyString() { // Destructor
+        if(this->data!=nullptr){
         delete[] data;
+        }
     }
 
     const char* get() const {
@@ -85,7 +72,10 @@ public:
         strcat(newData, other.data ? other.data : "");
 
         MyString result(newData);
-        delete[] newData; 
+        if(newData!=nullptr){
+            delete[] newData;
+        }
+         
         return result;
     }
 
@@ -106,10 +96,6 @@ int main() {
 
     s3 = s1; // Copy assignment
     std::cout << "After assignment, s3: " << s3 << std::endl;
-
-    MyString s4 = std::move(s2); // Move constructor
-    std::cout << "After move, s4: " << s4 << std::endl;
-    std::cout << "s2 after move: " << s2 << std::endl; // s2 should now be empty
-
+    
     return 0;
 }
