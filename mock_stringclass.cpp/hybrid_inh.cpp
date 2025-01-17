@@ -1,11 +1,7 @@
-/*
 
-    tempklate class 
-    tempkate function
-    stl   
-    function overloading 
-    function overriding
-    4 types - casting*/
+   
+    
+    
     
 
 
