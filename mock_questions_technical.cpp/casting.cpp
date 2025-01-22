@@ -34,6 +34,7 @@ int main() {
     const int constNum = 60;
     int& non = const_cast<int&>(constNum);
     non = 24; 
+    
     cout << "org value: " << constNum << " after: " << non << endl;
 
     cout << "reinterpret_cast" << endl;
@@ -43,5 +44,5 @@ int main() {
 
     delete baseptr; 
     return 0;
-    
+
 }
