@@ -10,6 +10,8 @@ int main() {
     std::cout << "Enter the elements:\n";
     for (int i = 0; i < n; ++i) {
         std::cin >> arr[i];
+
+        
     }
 
     // Initialize Sorting object with pointer to the array and its size
