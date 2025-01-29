@@ -54,7 +54,15 @@
     "unordered_map": "cpp",
     "variant": "cpp",
     "vector": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "charconv": "cpp",
+    "cinttypes": "cpp",
+    "condition_variable": "cpp",
+    "forward_list": "cpp",
+    "future": "cpp",
+    "set": "cpp",
+    "shared_mutex": "cpp",
+    "unordered_set": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "clang",
   "C_Cpp_Runner.cppCompilerPath": "clang++",
