@@ -17,3 +17,4 @@ int main(){
     cout<<obj1.addfunc()<<endl;
     return 0;
 }
+
