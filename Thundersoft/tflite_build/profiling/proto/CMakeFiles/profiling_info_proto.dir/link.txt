@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libprofiling_info_proto.a CMakeFiles/profiling_info_proto.dir/__/__/tensorflow/lite/profiling/proto/profiling_info.pb.cc.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libprofiling_info_proto.a

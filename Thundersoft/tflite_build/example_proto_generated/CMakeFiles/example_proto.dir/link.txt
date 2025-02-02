@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libexample_proto.a CMakeFiles/example_proto.dir/tensorflow/core/example/example.pb.cc.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libexample_proto.a

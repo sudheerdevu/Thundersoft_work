@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libfeature_proto.a CMakeFiles/feature_proto.dir/tensorflow/core/example/feature.pb.cc.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libfeature_proto.a

@@ -1,0 +1,14 @@
+# Target labels
+ xnnpack-populate
+# Source files and their labels
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/xnnpack-subbuild/CMakeFiles/xnnpack-populate
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/xnnpack-subbuild/CMakeFiles/xnnpack-populate.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/xnnpack-subbuild/CMakeFiles/xnnpack-populate-complete.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-build.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-configure.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-download.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-install.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-mkdir.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-patch.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-test.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-update.rule

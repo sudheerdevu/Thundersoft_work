@@ -1,0 +1,14 @@
+# Target labels
+ ml_dtypes-populate
+# Source files and their labels
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/ml_dtypes-subbuild/CMakeFiles/ml_dtypes-populate
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/ml_dtypes-subbuild/CMakeFiles/ml_dtypes-populate.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/ml_dtypes-subbuild/CMakeFiles/ml_dtypes-populate-complete.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/ml_dtypes-populate-build.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/ml_dtypes-populate-configure.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/ml_dtypes-populate-download.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/ml_dtypes-populate-install.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/ml_dtypes-populate-mkdir.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/ml_dtypes-populate-patch.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/ml_dtypes-populate-test.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/ml_dtypes-populate-update.rule

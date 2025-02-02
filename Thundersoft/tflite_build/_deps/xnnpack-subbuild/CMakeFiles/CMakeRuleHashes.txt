@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+800fdfd33ca436007a42e36d6d8ed81c /Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-build
+cabb8e07cbc822882dffbe28b69ed3d4 /Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-configure
+0daad9720a1ab079c4d1140c146e2a17 /Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-download
+795039ebdfa4f39fdf8ef776e3826cdb /Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-install
+e4d101eb0c636069e026b154599ad258 /Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-mkdir
+e3379f6b07f0d8a263044489708c5f69 /Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-patch
+da9d9d0aecb598f6e1f9b968fc54eb7a /Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-test
+7b1cee7ecda2cd566dfa2d8c2a65cdca /Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-update
+2aaea6ae888d8e5ef0e9ca6738a6f588 CMakeFiles/xnnpack-populate
+02ef44e8b2aed7b897d8ddf11f0b3a6e CMakeFiles/xnnpack-populate-complete

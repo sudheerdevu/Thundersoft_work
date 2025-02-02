@@ -1,0 +1,3 @@
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/protobuf-subbuild/CMakeFiles/protobuf-populate.dir
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/protobuf-subbuild/CMakeFiles/edit_cache.dir
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/protobuf-subbuild/CMakeFiles/rebuild_cache.dir

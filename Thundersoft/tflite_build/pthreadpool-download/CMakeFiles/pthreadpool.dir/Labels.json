@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/CMakeFiles/pthreadpool"
+		},
+		{
+			"file" : "/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/CMakeFiles/pthreadpool.rule"
+		},
+		{
+			"file" : "/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/CMakeFiles/pthreadpool-complete.rule"
+		},
+		{
+			"file" : "/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/pthreadpool-build.rule"
+		},
+		{
+			"file" : "/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/pthreadpool-configure.rule"
+		},
+		{
+			"file" : "/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/pthreadpool-download.rule"
+		},
+		{
+			"file" : "/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/pthreadpool-install.rule"
+		},
+		{
+			"file" : "/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/pthreadpool-mkdir.rule"
+		},
+		{
+			"file" : "/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/pthreadpool-patch.rule"
+		},
+		{
+			"file" : "/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/pthreadpool-test.rule"
+		},
+		{
+			"file" : "/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/pthreadpool-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"pthreadpool"
+		],
+		"name" : "pthreadpool"
+	}
+}

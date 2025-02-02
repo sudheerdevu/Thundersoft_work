@@ -1,0 +1,14 @@
+# Target labels
+ cpuinfo-populate
+# Source files and their labels
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/cpuinfo-subbuild/CMakeFiles/cpuinfo-populate
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/cpuinfo-subbuild/CMakeFiles/cpuinfo-populate.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/cpuinfo-subbuild/CMakeFiles/cpuinfo-populate-complete.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/cpuinfo-subbuild/cpuinfo-populate-prefix/src/cpuinfo-populate-stamp/cpuinfo-populate-build.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/cpuinfo-subbuild/cpuinfo-populate-prefix/src/cpuinfo-populate-stamp/cpuinfo-populate-configure.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/cpuinfo-subbuild/cpuinfo-populate-prefix/src/cpuinfo-populate-stamp/cpuinfo-populate-download.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/cpuinfo-subbuild/cpuinfo-populate-prefix/src/cpuinfo-populate-stamp/cpuinfo-populate-install.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/cpuinfo-subbuild/cpuinfo-populate-prefix/src/cpuinfo-populate-stamp/cpuinfo-populate-mkdir.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/cpuinfo-subbuild/cpuinfo-populate-prefix/src/cpuinfo-populate-stamp/cpuinfo-populate-patch.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/cpuinfo-subbuild/cpuinfo-populate-prefix/src/cpuinfo-populate-stamp/cpuinfo-populate-test.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/cpuinfo-subbuild/cpuinfo-populate-prefix/src/cpuinfo-populate-stamp/cpuinfo-populate-update.rule

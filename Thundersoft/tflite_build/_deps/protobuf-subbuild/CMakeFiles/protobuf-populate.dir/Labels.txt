@@ -1,0 +1,14 @@
+# Target labels
+ protobuf-populate
+# Source files and their labels
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/protobuf-subbuild/CMakeFiles/protobuf-populate
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/protobuf-subbuild/CMakeFiles/protobuf-populate.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/_deps/protobuf-subbuild/CMakeFiles/protobuf-populate-complete.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/protobuf-populate-stamp/protobuf-populate-build.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/protobuf-populate-stamp/protobuf-populate-configure.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/protobuf-populate-stamp/protobuf-populate-download.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/protobuf-populate-stamp/protobuf-populate-install.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/protobuf-populate-stamp/protobuf-populate-mkdir.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/protobuf-populate-stamp/protobuf-populate-patch.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/protobuf-populate-stamp/protobuf-populate-test.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/src/protobuf-populate-stamp/protobuf-populate-update.rule

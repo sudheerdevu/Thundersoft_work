@@ -1,0 +1,14 @@
+# Target labels
+ fxdiv
+# Source files and their labels
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FXdiv-download/CMakeFiles/fxdiv
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FXdiv-download/CMakeFiles/fxdiv.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FXdiv-download/CMakeFiles/fxdiv-complete.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/fxdiv-build.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/fxdiv-configure.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/fxdiv-download.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/fxdiv-install.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/fxdiv-mkdir.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/fxdiv-patch.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/fxdiv-test.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/fxdiv-update.rule

@@ -1,0 +1,14 @@
+# Target labels
+ fp16
+# Source files and their labels
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FP16-download/CMakeFiles/fp16
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FP16-download/CMakeFiles/fp16.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FP16-download/CMakeFiles/fp16-complete.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-build.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-configure.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-download.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-install.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-mkdir.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-patch.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-test.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-update.rule

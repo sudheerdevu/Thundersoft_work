@@ -1,0 +1,14 @@
+# Target labels
+ pthreadpool
+# Source files and their labels
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/CMakeFiles/pthreadpool
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/CMakeFiles/pthreadpool.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/CMakeFiles/pthreadpool-complete.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/pthreadpool-build.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/pthreadpool-configure.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/pthreadpool-download.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/pthreadpool-install.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/pthreadpool-mkdir.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/pthreadpool-patch.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/pthreadpool-test.rule
+/Users/vaddikasulu/Thundersoft_work/Thundersoft/tflite_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/pthreadpool-update.rule
